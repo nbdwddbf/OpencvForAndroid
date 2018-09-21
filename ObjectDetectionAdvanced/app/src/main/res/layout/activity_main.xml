@@ -16,7 +16,7 @@
 
     <fragment
         android:id="@+id/navigation_drawer"
-        android:name="com.example.dabuff.objectdetectionadvanced.NavigationDrawerFragment"
+        android:name="com.example.dabuff.objectdetectionadvanced.navigation.NavigationDrawerFragment"
         android:layout_width="240dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"

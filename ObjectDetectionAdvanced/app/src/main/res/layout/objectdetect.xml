@@ -1,15 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical" >
+
+<TextView
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:gravity="center"
+    android:text="益智物体识别"
+    android:textSize="30sp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnsinglestart"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="100dp"
-        android:text="点击开始"/>
+<TextView
+    android:id="@+id/edit_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_"
+    android:layout_marginRight="@dimen/margin_"
+    android:textSize="@dimen/txt_size" />
 
-</FrameLayout>
+<Button
+    android:id="@+id/btnsinglestart"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="单个物体识别"
+    android:textSize="@dimen/btn_size"
+    />
+
+<Button
+    android:id="@+id/btnmultiplestart"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="多个物体识别"
+    android:textSize="@dimen/btn_size"
+    />
+
+</LinearLayout>
